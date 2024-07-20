@@ -161,7 +161,7 @@ async function run() {
     const version = getInput("version");
     const valueFiles = getValueFiles(getInput("value_files"));
     const removeCanary = getInput("remove_canary");
-    const helm = getInput("helm") || "helm";
+    const helm = "helm";
     const timeout = getInput("timeout");
     const repository = getInput("repository");
     const dryRun = core.getInput("dry-run");
